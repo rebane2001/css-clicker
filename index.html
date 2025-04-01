@@ -589,6 +589,9 @@ body:has(>#devtools #t-oneko:not(:checked), #u-oneko:not(:checked)) #oneko
 	@media (width >= 1280px) {
 		#mobileBubble { display: none }
 	}
+	@media (width <= 720px) {
+		body:has(>#devtools>#devtoolsHidden:not(:checked)) #winamp { display:none }
+	}
 	.bubblepop {
 		z-index: 10002;
 		user-select: none;
